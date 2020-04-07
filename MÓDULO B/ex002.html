@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meu primeiro programa</title>
+    <style>
+        body{
+            background-color: rgb(121, 79, 79);
+            color: rgb(0, 255, 0);
+            font: normal 30pt Arial;
+        }
+        h1 {
+            color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá mundo!</h1>
+    <hr>
+    <p>BOA NOITE </p>
+    <script>
+        var nome = window.prompt('Qual o seu nome?') ////manda uma pergunta para ser respondida em digitação pelo usuario antes do site carregar. podendo ser guardada pelo site
+        window.prompt('Qual o seu nome?') //ex sem variável, ou seja a informação não será guardada
+
+        window.alert("é um grande te conhecer, "+ nome) //apresenta a informação guardada na variável nome + concatenação da mensagem string com a variável
+
+
+        
+        var n1 = window.prompt("digite um numero") // entrega o valor dado em ***STRING***
+        var n2 = window.prompt("digite outro numero") // entra o valor dado em ***STRING***
+        var s = n1 + n2
+        /* é necessário fazer a conversão das variáveis n1 e n2 que são STRINGS para NUMBERS, caso o contrário o "+" representará uma concatenação de duas strings e não dois numbers.*/
+
+        window.alert("a soma dos valores é, "+ s) //apresentação do valor de S
+    </script>
+</body>
+</html>
