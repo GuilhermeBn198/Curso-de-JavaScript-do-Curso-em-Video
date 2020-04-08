@@ -32,7 +32,21 @@
         var s = n1 + n2
         /* é necessário fazer a conversão das variáveis n1 e n2 que são STRINGS para NUMBERS, caso o contrário o "+" representará uma concatenação de duas strings e não dois numbers.*/
 
-        window.alert("a soma dos valores é, "+ s) //apresentação do valor de S
+        window.alert("a soma dos valores é, "+ s) //apresentação do valor de s
+
+
+        var n1 = Number(window.prompt("digite um numero")) // entrega o valor dado em ***NUMBER***
+        var n2 = Number(window.prompt("digite outro numero")) // entra o valor dado em ***NUMBER***
+        var s = n1 + n2
+        /* é necessário fazer a conversão das variáveis n1 e n2 que são STRINGS para NUMBERS ou FLOATS, caso o contrário o "+" representará uma concatenação de duas strings e não dois numbers.*/
+
+        window.alert(`a soma de ${n1} + ${n2} é igual a ${s}`) //apresentação do valor de s usando TEMPLATE STRING
+
+        document.write(`olá <strong>${nome}</strong> Seu nome tem ${nome.length} letras <br>`)
+        document.write(`seu nome em maiusculas eh ${nome.toUpperCase()} <br>`)
+        documeent.write(`seu ${nome} em minusculas eh ${nome.toLowerCase()} <br>`)
+
+
     </script>
 </body>
 </html>
