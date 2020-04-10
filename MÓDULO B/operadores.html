@@ -12,25 +12,30 @@
         h1 {
             color: darkblue;
         }
-        p{
-            color: darkseagreen;
+        h3{
+            color: darkblue;
+        }
+        h4{
+            color: darkblue;
         }
     </style>
 </head>
 <body>
     <h1>Os Operadores do Javascript</h1>
     <p>
-    -possuem varias familias de Operadores, porém serão abordados apenas os operadores: <br>
-    Aritméticos <br>
-    os de Atribuição <br>
-    os Relacionais <br>
-    Lógicos <br>
-    e os Ternários <br>
+        -possuem varias familias de Operadores, porém serão abordados apenas os operadores: <br>
+        <strong>Aritméticos</strong> <br>
+        os de <strong>Atribuição</strong> <br>
+        os <strong>Relacionais</strong> <br>
+        <strong>Lógicos</strong> <br>
+        e os <strong>Ternários</strong> <br>
     <br>        
     obs: o comando typeof() é um tipo de operador também <br>
     </p>
     <br>
-    <h3>Aritméticos</h3>
+    <hr>
+    <h3>ARITMÉTICOS
+    </h3>
     <p>
         são aqueles que abordam os calculos básicos comums, como adição, subtração, multiplicação, divisão, exponenciação e divisão inteira. <br>
         <br>
@@ -41,10 +46,14 @@
              5 / 2 = 2,5 <!--divisão REAL--> <br>
              5 % 2 = 1 <!--RESTO DA DIVISÃO INTEIRA--> <br>
              5 ** 2 = 25 <!--exponenciação/potência--> <br>
+             5 == 2 = FALSE <!--IGUAL-->
         <h4>EXISTEM PRECEDENCIA DE OPERADORES</h4>
             seguindo a ordem da matemática padrão, primeiro fazemos os () depois os números/operações, seguindo a ordem de precedencia de potencia/exponenciação entao fazemos divisão/multiplicação para então fazer adição/subtração. <br>
+            ABAIXO DOS ARITMÉTICOS, ESTÃO OS RELACIONAIS. DA ESQUEDA PRA DIREITA. <br>
+            por  fim a ordem de precedencia dos lógicos é ! depois && e depois || <br>
     </p>
-    <h3>Atribuição</h3>
+    <hr>
+    <h3>ATRIBUIÇÃO</h3>
     <p>
         são aqueles que atribuem valores a certos tipos de variaveis e condições <br>
         <br>
@@ -81,8 +90,57 @@
         n++    n=11 <br>
         n--    n=9 <br>
         <br>
-        <h4>RELACIONAIS</h4>
-        
+    </p>
+    <hr>    
+    <h3>RELACIONAIS</h3>
+    <p>
+        são os operadores que aplicam as mesmas regras de relações de quase todas as outras linguagens de programação. com seus resultados de operação igual a booleano, TRUE ou FALSE <br>
+        ex: <br>
+        5 > 2 -> TRUE <br>
+        7 < 4 -> FALSE <br>
+        8 >= 8 -> TRUE <br>
+        9 <= 7 -> FALSE <br>
+        5 == 5 -> TRUE <br>
+        4 != 5 -> FALSE <br>
+        o sinal de igualdade restrita funciona testando se os dois valores são exatamente identicos, até mesmo os tipos dos valores <br>
+        ex: 5 === 5 -> TRUE <br>
+            5 === '5' -> FALSE <br>
+            <br>
+    </p>
+    <hr>        
+    <h3>LÓGICOS</h3>
+    <p>
+        são três: <br>
+        ! -> negação <br>
+        && -> conjunção <br>
+        || -> disjunção <br>
+        <br>
+        <h4> <strong>NEGAÇÃO</strong> </h4>
+        depois da exclamação apenas use TRUE ou FALSE. <br>
+        ex: var a = TRUE <br>
+            !a = FALSE <br>
+            !!a = TRUE <br>                <br>
+        <h4><strong>CONJUNÇÃO</strong></h4>
+        com 4 possibilidades de resultado, a conjunção trabalha com E.<br>
+        ex: <br>
+        TRUE && TRUE -> TRUE <br>
+        TRUE && FALSE -> FALSE <br>
+        FALSE && TRUE -> FALSE <br>
+        FALSE && FALSE -> TRUE <br>
+    </p>
+    <hr>
+    <h3>TERNÁRIOS</h3>
+    <p>
+        é composto por 2 simbolos, o ? e o : dentro de uma mesma expressão <br>
+        é composto por 3 seções. ex: <br>
+        <br>
+        teste ? TRUE : FALSE <br>
+        o <strong>primeiro</strong> representa o teste lógico que dá TRUE ou FALSE. <br>
+        o do <strong>meio</strong> representa o que irá acontecer caso o teste dê TRUE. <br>
+        e o <strong>ultimo</strong> representa o que acontecerar caso o teste dê FALSE <br>
+        ex: <br>
+        var media =5.5 <br>
+        media . 7 ? 'aprovado' : 'reprovado'
     </p>
 </body>
 </html>
