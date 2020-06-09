@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex005</title>
+    <style>
+        body {
+            background: burlywood;
+            color: black;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1> <!--AULA 09-->
+    <p>
+        Aqui vai o resultado
+    </p>
+    <p>
+        Aprendendo a usar o <strong>DOM</strong> em JavaScript.
+    </p>
+    <div id="msg">Clique em mim</div> <!--usando o id para poder pegar essa div no javascript-->
+    <!--para usar name apenas trocar o ID por NAME-->
+    <script>
+        window.document.write(window.document.URL)   
+        var p1 = window.document.getElementsByTagName('p')[0] /* aqui se cria uma variavel que pega um elemento por tagname/marca dentro de () vai o tipo de tag/marca e dentro do [] seleciona-se começando por 0 a até quantas tag do mesmo tipo tiver dentro do site.*/
+        window.document.write("Está escrito assim:  "+ p1.innerText)/* aqui se escreve dentro do arquivo do website através do DOM o que está escrito dentro do ELEMENTO QUE P1 PEGOU. */
+        p1.style.color = 'blue' //pode-se também alterar a cor de elementos através da variável do DOM
+
+        var corpo = window.document.body
+        corpo.style.background = 'red' //pode-se alterar até mesmo a cor do fundo da página
+
+
+
+
+        //se digitar window. e rolar através dos objetos poderá se ter uma idéia da quantidade de objetos presentes em windows
+        
+        //assim como se pode mostrar o url atual do site com o window.document.write(window.document.URL)
+
+        //pode-se descobrir qual o app que esta acessando o website atualmente através do comando window.document.write(window.navigator.appName).
+        //se quisermos podemos usar window.document.write(window.document.charset) pra saber qual o set de caracteres, no caso, o UTF-8 é o atualmente utilizado pela pagina.
+
+        //se quisermos, podemos escrever dentro de nosso documento com o document.write("")<-- não é a maneira mais eficiente.
+
+
+
+        //agr selecionando o elemento desejado, no caso por ID, no caso a div com ID = 'msg'
+        /*var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'estou aguardando hmmm' */
+
+
+
+        //agora selecionando com o queryselector
+        var d = window.document.querySelector('div#msg') //ID = # --- class = . ex: div#msg --- div.msg
+        d.style.background = 'blue'
+    </script>
+</body>
+</html>

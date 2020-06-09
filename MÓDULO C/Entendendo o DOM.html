@@ -4,17 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document Object Model</title>
+    <style>
+            body {
+                background: burlywood;
+                color: black;
+                font: normal 18pt Arial;
+            }
+            h4 {
+                color: chocolate;
+            }
+    </style>
 </head>
 <body>
-    <h1>DOCUMENT OBJECT MODEL</h1>
-    <hr>
+    <h1>ENTENDENDO O DOM</h1> <!-- AULA 09-->
+    <br>
     <P>
         <h2>O QUE É?</h2>
-        
-        <hr>
+         é um modelo de objetos para documentos, presente dentro de um navegador que dá acesso aos componentes internos de um website.
+         <strong>O DOM NÃO RODA NO NODE.JS, PRESENTE QUANDO ESTÁ RODANDO JAVASCRIPT NO NAVEGADOR</strong>
     </P>
+    <hr style="color: rgb(49, 175, 24);">
     <p>
-        <h2>Arvore DOM</h2>
+        <h2>ARVORE DOM</h2>
+        <strong>window</strong> -> significa janela e basicamente a janela do proprio navegador ja é um objeto DOM.
+        Dentro do window, existem varios outros objetos, como <strong>location</strong> que identifica a localização do site, URL e afins.
+        O <strong>document</strong>, amplamente usado durante o curso, que é o documento atual 
+        e o <strong>history</strong>, que registra a informação de onde se navegou e pra onde irá se navegar.
+        <br>
+        Dentro do <strong>document</strong> existe o objeto <strong>html</strong>(no caso, <strong>document</strong> é PARENT de <strong>html</strong>) e dentro de <strong>html</strong> existe o <strong>head</strong> e <strong>body</strong> (no caso, <strong>html</strong> é parent de <strong>head</strong> e <strong>body</strong>)
+    </p>
+    <hr style="color: rgb(49, 175, 24);">
+    <p>
+        <h2> SELEÇÃO DE ELEMENTOS</h2>
+        <br>
+        <h3>O QUE SÃO ELEMENTOS?</h3>
+        são tudo e qualquer coisa que pertencente a <strong>ARVORE DOM</strong> e existem vários tipos de seletores de elementos, mas serão abordados apenas 5.
+        <br>
+        <h4>POR MARCA</h4>
+        getElementsByTagName()
+        consegue selecionar multiplos objetos de um mesmo tipo/tag <!--ex:<p>-->
+        <br>  
+        <h4>POR ID</h4>
+        getElementsById()
+        usado em sites mais complexos, identifica-se um div etc
+        <br>
+        <h4>POR NOME</h4>
+        getElementsByName()
+        se tivermos uma propriedade name
+        <br> 
+        <h4>POR CLASSE</h4>
+        getElementsByClassName()
+        <br>
+        <h4>POR SELETOR</h4>
+        querySelector()
+        querySelectorAll()
+        a mais nova dessas 5 opções, atualmente recomendada
+        <br>    
     </p>
 </body>
 </html>
