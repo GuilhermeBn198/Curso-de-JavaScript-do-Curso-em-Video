@@ -23,8 +23,10 @@
     <div id="msg">Clique em mim</div> <!--usando o id para poder pegar essa div no javascript-->
     <!--para usar name apenas trocar o ID por NAME-->
     <script>
-        window.document.write(window.document.URL)   
-        var p1 = window.document.getElementsByTagName('p')[0] /* aqui se cria uma variavel que pega um elemento por tagname/marca dentro de () vai o tipo de tag/marca e dentro do [] seleciona-se começando por 0 a até quantas tag do mesmo tipo tiver dentro do site.*/
+        //window.document.write(window.document.URL) //escreve no documento a url do mesmo
+        //window.document.write(window.document.charset) //escreve o tipo de set de caracteres utilizado
+        //window.document.write(window.document.navigator)  //escreve qual o navegador que esta sendo usado para reproduzir o documento
+        var p1 = window.document.getElementsByTagName('p')[1] /* aqui se cria uma variavel que pega um elemento por tagname/marca dentro de () vai o tipo de tag/marca e dentro do [] seleciona-se começando por 0 a até quantas tag do mesmo tipo tiver dentro do site.*/
         window.document.write("Está escrito assim:  "+ p1.innerText)/* aqui se escreve dentro do arquivo do website através do DOM o que está escrito dentro do ELEMENTO QUE P1 PEGOU. */
         p1.style.color = 'blue' //pode-se também alterar a cor de elementos através da variável do DOM
 
@@ -46,14 +48,17 @@
 
 
         //agr selecionando o elemento desejado, no caso por ID, no caso a div com ID = 'msg'
-        /*var d = window.document.getElementById('msg')
+        
+        /*
+        var d = window.document.getElementById('msg')
         d.style.background = 'green'
-        d.innerText = 'estou aguardando hmmm' */
+        d.innerText = 'estou aguardando hmmm'
+         */
 
 
 
         //agora selecionando com o queryselector
-        var d = window.document.querySelector('div#msg') //ID = # --- class = . ex: div#msg --- div.msg
+        var d = window.document.querySelector('div#msg') //ID = # para ID e class = . para classes ex: div#msg e div.msg
         d.style.background = 'blue'
     </script>
 </body>

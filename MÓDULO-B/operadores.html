@@ -111,9 +111,9 @@
     <h3>LÓGICOS</h3>
     <p>
         são três: <br>
-        ! -> negação <br>
-        && -> conjunção <br>
-        || -> disjunção <br>
+        ! -> negação (TRADUÇÃO: NÃO)<br>
+        && -> conjunção (TRADUÇÃO:E)<br>
+        || -> disjunção (TRADUÇÃO:OU)<br>
         <br>
         <h4> <strong>NEGAÇÃO</strong> </h4>
         depois da exclamação apenas use TRUE ou FALSE. <br>
@@ -121,17 +121,24 @@
             !a = FALSE <br>
             !!a = TRUE <br>                <br>
         <h4><strong>CONJUNÇÃO</strong></h4>
-        com 4 possibilidades de resultado, a conjunção trabalha com E.<br>
+        com 4 possibilidades de resultado, a conjunção só aponta TRUE qunado os resultados analisados são semelhantes.<br>
         ex: <br>
         TRUE && TRUE -> TRUE <br>
         TRUE && FALSE -> FALSE <br>
         FALSE && TRUE -> FALSE <br>
         FALSE && FALSE -> TRUE <br>
+        <h4><strong>DISJUNÇÃO</strong></h4>
+        também com 4 possibilidades de resultado, a disjunção só aponta TRUE quando os resultados são diferentes. <br>
+        ex: <br>
+        TRUE && TRUE -> FALSE <br>
+        TRUE && FALSE -> TRUE <br>
+        FALSE && TRUE -> TRUE <br>
+        FALSE && FALSE -> FALSE <br>
     </p>
     <hr>
     <h3>TERNÁRIOS</h3>
     <p>
-        é composto por 2 simbolos, o ? e o : dentro de uma mesma expressão <br>
+        é composto por 2 simbolos, o ? e o : dentro de uma mesma expressão. agindo semelhantemente ao IF-ELSE-IF <br>
         é composto por 3 seções. ex: <br>
         <br>
         teste ? TRUE : FALSE <br>
@@ -139,8 +146,13 @@
         o do <strong>meio</strong> representa o que irá acontecer caso o teste dê TRUE. <br>
         e o <strong>ultimo</strong> representa o que acontecerar caso o teste dê FALSE <br>
         ex: <br>
-        var media =5.5 <br>
-        media . 7 ? 'aprovado' : 'reprovado'
+        var media=5.5 <br>
+        media>7 ? 'aprovado' : 'reprovado' <br>
+        <br>
+        ex2: <br>
+        var x = 8 <br>
+        var res = x%2==0 ? 5 : 9 <br>
+        o resto da divisão de x por 2 eh igual a 0 e como 0==0 então o operador apresentou TRUE, então a variavel res receberá 5. <br>
     </p>
 </body>
 </html>
