@@ -17,8 +17,31 @@
     </style>
 </head>
 <body>
-    <div id="area">
+    <div id="area">  
         interaja
     </div>
+    <script> //tudo fora de function mas dentor de script irá funcionar diretamente. NÃO É UM BLOCO.
+            //aqui está configurado para ao clicar, entrar e sair da div, chamar a função clicar()
+        var a = window.document.getElementById('area') //colocando o getelement fora dos blocos de função irá fazer com que sempre pegue o elemento.
+        a.addEventListener('click', clicar) //o mesmo se aplica aos addeventlistener
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        //addeventlistener é usado para  criar um evento em um elemento. no caso, está pegando o elemento 'area' e adicionando 3 eventos a ele
+        //sendo o primeiro parametro o EVENTO e o segundo parametro a função que vai executar
+        
+        function clicar() {
+            //tudo que tiver aqui dentro só será executado quando for chamado na div la em cima.
+            a.innerText = 'Clicou!!'
+            a.style.background = 'green'
+        }
+        function entrar() {
+            a.innerText = 'Entrou!!'
+            a.style.background = 'red'
+        }
+        function sair() {
+            a.innerText = 'Saiu!!'
+            a.style.background = 'blue'
+        } 
+    </script>
 </body>
 </html>
