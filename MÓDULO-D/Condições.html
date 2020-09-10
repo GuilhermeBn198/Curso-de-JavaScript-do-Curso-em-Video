@@ -45,17 +45,49 @@
         <h2>condições</h2>
         <p>condições são linhas de códigos especiais que podem ditar quando uma parte do código pode ser executada, como filtros ou placas de trânsito.</p>
         <p>ex de condicionamento: <br>
-        <h2>if(condição){ <br>
-         TRUE <br>
-        } else { <br>   <!-- esta eh uma condição -->
-            FALSE <br>
-        } <br>
-        e também existe o: <br>
-        if(condição){ <br>    <!--esta eh uma condição simples-->
-            TRUE<br>
-        }</h2>
+            <h2>
+                if(condição){ <br>
+                TRUE <br>
+                } else { <br>  
+                FALSE <br>
+                } <br>
+            </h2>
+            que é uma condição simples <br>
+            <h2>
+            e também existe o: <br>
+                if(condição){ <br> 
+                TRUE<br>
+                }
+            </h2>
+            que é uma ccondição composta <br>
+            existe as condições aninhadas <br>
+            <h2>
+                if (condição){ <br> 
+                    } else { <br>
+                        if(condição2){ <br>
+                        } else {            <br>             
+                        } <br>
+                    } <br>
+                } <br>
+            </h2>
+            caso a condição do primeiro IF seja verdadeira, o primeiro bloco de código é executado, se for falsa executará o bloco do ELSE1 que verificará se o IF2 será verdadeiro ou falso. <br>
+            <br>
+            existe também a condição multipla, que trabalha com várias possibilidades, além da possibilidade de TRUE e FALSE, com condições feitas manualmente. MUITO util em situações expecíficas. <br>
+
+            switch(expressão) {
+                case valor1:
+                break
+                case valor2:
+                break
+                case valor3:
+                break
+                case valor4:
+                break
+                default:
+                break
+            }
+            funciona quando o comando testa a expressão inicial, e verifica o valor da expressão e testa em cada um dos CASES até achar um que satisfaz a condição do case.
         </p>
-        <p>caso o a condição do IF seja verdadeira, o primeiro bloco de código é executado, se for falsa executará o bloco do ELSE.</p>
     </div>
 </body>
 </html>
